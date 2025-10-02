@@ -1,5 +1,9 @@
 # Lab2web
-
+#### Nama   = DZAKI ARIF RAHMAN  
+#### Kelas  = TI.24.A4  
+#### NIM    = 312410312  
+#### Matkul = Pemograman Web 1 
+# Praktikum 2 CSS
 
 ## Tugas
 <img width="1012" height="556" alt="Screenshot 2025-10-02 130905" src="https://github.com/user-attachments/assets/e25c0808-c363-4cdb-8f89-82e6be57ec2b" />
