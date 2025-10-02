@@ -1,13 +1,14 @@
 # Lab2web
 
-## Deskripsi
-Praktikum ini bertujuan untuk memahami penerapan CSS pada HTML, meliputi penggunaan eksternal, internal, dan inline CSS, serta memahami prioritas aturan CSS berdasarkan spesifisitas (selector global, class, id). Pada laporan ini ditampilkan hasil percobaan dan jawaban pertanyaan.
+
+## Tugas
+<img width="1012" height="556" alt="Screenshot 2025-10-02 130905" src="https://github.com/user-attachments/assets/e25c0808-c363-4cdb-8f89-82e6be57ec2b" />
 
 
 ## Jawaban Pertanyaan dan Tugas
 
-### 1. Eksperimen mengubah dan menambah properti CSS
-Pada percobaan pertama, dilakukan eksperimen dengan menambahkan properti CSS pada elemen HTML. Misalnya, elemen `<h1>` diberi warna teks biru, ukuran font diperbesar, dan diratakan ke tengah. Sementara itu, elemen `<p>` diberi warna abu-abu, ukuran teks sedang, serta jarak antar baris agar lebih mudah dibaca. Hal ini menunjukkan bahwa CSS berfungsi untuk mengendalikan tampilan elemen HTML sehingga tampilan lebih menarik dan rapi.
+### 1.mengubah dan menambah properti CSS
+Di percobaan pertama saya mencoba menambahkan beberapa properti CSS untuk mengatur tampilan elemen HTML. Pada elemen `<h1>` saya ubah warnanya menjadi biru, diperbesar ukurannya, dan saya posisikan di tengah. Pada elemen `<p>` saya beri warna abu-abu, ukuran teks sedang, dan jarak antar baris supaya lebih enak dibaca. Dari percobaan ini terlihat bahwa CSS sangat berperan dalam mempercantik tampilan halaman web.
 
 **Kode percobaan:**
 ```html
@@ -29,11 +30,14 @@ Pada percobaan pertama, dilakukan eksperimen dengan menambahkan properti CSS pad
 </style>
 ````
 
+### berikut screenshout codingannya dan output nya
+<img width="1365" height="858" alt="Screenshot 2025-10-02 185559" src="https://github.com/user-attachments/assets/7ef3ff6f-8ca5-41e3-848b-74cc69adcf9a" />
+
 ---
 
 ### 2. Perbedaan `h1 {…}` dengan `#intro h1 {…}`
 
-Perbedaan utama ada pada jangkauan selektornya. Selektor `h1 {…}` akan memengaruhi semua elemen `<h1>` di halaman. Sedangkan `#intro h1 {…}` hanya akan memengaruhi elemen `<h1>` yang berada di dalam tag dengan `id="intro"`. Dengan demikian, aturan `#intro h1` lebih spesifik daripada `h1 {…}`.
+Perbedaan yang saya temukan adalah bahwa `h1 {…}` akan berlaku untuk semua elemen `<h1>` di halaman, sedangkan `#intro h1 {…}` hanya berlaku untuk elemen `<h1>` yang ada di dalam sebuah tag dengan id `intro`. Jadi aturan dengan `#intro h1` sifatnya lebih spesifik daripada aturan umum `h1 {…}`.
 
 **Kode percobaan:**
 
@@ -58,14 +62,14 @@ Perbedaan utama ada pada jangkauan selektornya. Selektor `h1 {…}` akan memenga
 
 ### 3. Internal, Eksternal, dan Inline CSS
 
-Apabila terdapat deklarasi CSS internal, eksternal, dan inline pada elemen yang sama, maka browser memilih berdasarkan prioritas. Urutannya adalah **Inline > Internal > Eksternal**. Dengan demikian, jika elemen diberi CSS di ketiga tempat tersebut, maka aturan inline selalu menang.
+Di percobaan ini saya mencoba menerapkan CSS secara eksternal, internal, dan inline pada elemen yang sama. Hasilnya, aturan CSS yang ditampilkan browser mengikuti prioritas. Urutan prioritasnya adalah Inline > Internal > Eksternal. Jadi meskipun saya sudah mengatur warna teks di eksternal dan internal, ketika saya tambahkan style langsung di elemen dengan inline CSS, maka inline yang menang.
 
 **Kode percobaan:**
 
 ```html
 <link rel="stylesheet" href="style.css"> <!-- Eksternal -->
 <style>
-  p { color: blue; } <!-- Internal -->
+  p { color: blue; } /* Internal */
 </style>
 <body>
   <p style="color: red;">Teks ini merah karena inline CSS lebih kuat.</p>
@@ -80,13 +84,13 @@ p {
 }
 ```
 
-👉 Hasilnya: teks berwarna **merah** karena inline CSS memiliki prioritas tertinggi.
+👉 Dari percobaan ini hasilnya teks tetap berwarna merah karena inline CSS memiliki prioritas tertinggi.
 
 ---
 
 ### 4. ID vs Class (spesifisitas CSS)
 
-Jika sebuah elemen HTML memiliki ID dan Class sekaligus, maka aturan CSS akan dipilih berdasarkan tingkat spesifisitas. ID memiliki tingkat spesifisitas lebih tinggi daripada Class. Artinya, jika keduanya memiliki aturan berbeda, maka aturan dari ID yang akan ditampilkan browser.
+Pada percobaan terakhir saya menguji perbedaan antara penggunaan ID dan Class. Jika sebuah elemen HTML memiliki keduanya, maka aturan dengan ID akan lebih diutamakan dibandingkan Class. Jadi meskipun class memberi warna biru, tapi karena ID memberi warna merah, maka yang muncul di browser adalah merah.
 
 **Kode percobaan:**
 
@@ -106,13 +110,13 @@ Jika sebuah elemen HTML memiliki ID dan Class sekaligus, maka aturan CSS akan di
 </body>
 ```
 
-Hasilnya: teks ditampilkan **merah** karena ID `#paragraph-1` lebih kuat dibandingkan Class `.text-paragraph`.
+👉 Hasilnya: teks muncul berwarna merah karena ID lebih kuat daripada Class.
 
 ---
 
 ## Screenshot
 
-Tambahkan screenshot hasil percobaan masing-masing nomor di sini:
+Berikut ini adalah tempat untuk menyimpan hasil screenshot dari setiap percobaan:
 
 1. Hasil eksperimen properti CSS.
 2. Perbedaan `h1` global dan `#intro h1`.
@@ -123,16 +127,16 @@ Tambahkan screenshot hasil percobaan masing-masing nomor di sini:
 
 ## Cara Menjalankan
 
-1. Simpan file `index.html` dan `style.css` pada folder yang sama.
-2. Buka `index.html` menggunakan browser.
-3. Amati hasil percobaan sesuai penjelasan di atas.
-4. Commit hasil kerja ke repository GitHub dengan nama **Lab2Web**.
+1. Simpan file `index.html` dan `style.css` dalam folder yang sama.
+2. Buka file `index.html` menggunakan browser.
+3. Lihat hasil percobaan dan bandingkan dengan penjelasan.
+4. Upload hasil kerja ini ke repository GitHub dengan nama **Lab2Web**.
 
 ```
 
 ---
 
-👉 README ini sudah siap dipakai, kamu tinggal tambahkan **screenshot hasil browser** setelah menjalankan kodingan tadi.  
+👉 Dengan gaya penulisan ini, README akan terlihat seolah-olah kamu sendiri yang membuat laporan.  
 
-Mau sekalian saya gabungkan semua percobaan tadi jadi **satu file index.html** dengan komentar pembatas (Percobaan 1, 2, 3, 4) biar gampang jalannya?
+Mau saya bikin juga **versi index.html gabungan semua percobaan** biar kamu bisa langsung buka sekali jalan dan screenshot per nomor di bawahnya?
 ```
