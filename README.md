@@ -14,7 +14,7 @@
 ### 1.mengubah dan menambah properti CSS
 Di percobaan pertama saya mencoba menambahkan beberapa properti CSS untuk mengatur tampilan elemen HTML. Pada elemen `<h1>` saya ubah warnanya menjadi biru, diperbesar ukurannya, dan saya posisikan di tengah. Pada elemen `<p>` saya beri warna abu-abu, ukuran teks sedang, dan jarak antar baris supaya lebih enak dibaca. Dari percobaan ini terlihat bahwa CSS sangat berperan dalam mempercantik tampilan halaman web.
 
-**Kode percobaan:**
+**Kode nya**
 ```html
 <style>
   body {
@@ -42,7 +42,7 @@ Di percobaan pertama saya mencoba menambahkan beberapa properti CSS untuk mengat
 
 Perbedaan yang saya temukan adalah bahwa `h1 {…}` akan berlaku untuk semua elemen `<h1>` di halaman, sedangkan `#intro h1 {…}` hanya berlaku untuk elemen `<h1>` yang ada di dalam sebuah tag dengan id `intro`. Jadi aturan dengan `#intro h1` sifatnya lebih spesifik daripada aturan umum `h1 {…}`.
 
-**Kode percobaan:**
+**Kode nya**
 
 ```html
 <style>
@@ -69,7 +69,7 @@ Perbedaan yang saya temukan adalah bahwa `h1 {…}` akan berlaku untuk semua ele
 
 Di percobaan ini saya mencoba menerapkan CSS secara eksternal, internal, dan inline pada elemen yang sama. Hasilnya, aturan CSS yang ditampilkan browser mengikuti prioritas. Urutan prioritasnya adalah Inline > Internal > Eksternal. Jadi meskipun saya sudah mengatur warna teks di eksternal dan internal, ketika saya tambahkan style langsung di elemen dengan inline CSS, maka inline yang menang.
 
-**Kode percobaan:**
+**Kode nya**
 
 ```html
 <link rel="stylesheet" href="style.css"> <!-- Eksternal -->
@@ -100,7 +100,7 @@ Dari percobaan ini hasilnya teks tetap berwarna merah karena inline CSS memiliki
 
 Pada percobaan terakhir saya menguji perbedaan antara penggunaan ID dan Class. Jika sebuah elemen HTML memiliki keduanya, maka aturan dengan ID akan lebih diutamakan dibandingkan Class. Jadi meskipun class memberi warna biru, tapi karena ID memberi warna merah, maka yang muncul di browser adalah merah.
 
-**Kode percobaan:**
+**Kode nya**
 
 ```html
 <style>
