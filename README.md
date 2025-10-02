@@ -1,23 +1,8 @@
 # Lab2web
 
-Oke siap 🚀, saya bikinkan README.md untuk laporan praktikum. Isi README ini akan memuat:
-
-* Identitas praktikum (judul, deskripsi singkat).
-* Jawaban narasi pertanyaan 1–4 (sudah saya rapikan).
-* Penjelasan kode percobaan tiap nomor.
-* Tempat untuk kamu tambahkan **screenshot hasil browser**.
-
----
-
-### 📄 `README.md`
-
-````markdown
-# Lab2Web - Praktikum CSS
-
 ## Deskripsi
 Praktikum ini bertujuan untuk memahami penerapan CSS pada HTML, meliputi penggunaan eksternal, internal, dan inline CSS, serta memahami prioritas aturan CSS berdasarkan spesifisitas (selector global, class, id). Pada laporan ini ditampilkan hasil percobaan dan jawaban pertanyaan.
 
----
 
 ## Jawaban Pertanyaan dan Tugas
 
